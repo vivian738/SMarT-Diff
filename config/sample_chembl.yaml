@@ -1,0 +1,21 @@
+data:
+  data: ChEMBL
+  dir: './data'
+
+ckpt: Jul14-06_19_33
+
+sampler:
+  predictor: Reverse
+  corrector: Adamomentum  #None
+  snr: 0.2  #0
+  scale_eps: 0.8 #0
+  n_steps: 1
+
+sample:
+  batch_size: 2500
+  use_ema: False
+  noise_removal: True
+  probability_flow: False
+  eps: 1.0e-3
+  seed: 42
+  template: LRRK2

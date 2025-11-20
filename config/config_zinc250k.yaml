@@ -1,0 +1,57 @@
+data:
+  data: ZINC250k
+  dir: './data'
+  batch_size: 1024
+  max_node_num: 38
+  max_feat_num: 9
+  init: atom
+
+sde:
+  x: 
+    type: VP
+    beta_min: 0.1
+    beta_max: 1.0
+    num_scales: 1000
+  adj:
+    type: VE
+    beta_min: 0.2
+    beta_max: 1.0
+    num_scales: 1000
+
+model:
+  type: ScoreTransformer
+  num_heads: 16
+  nhid: 1024  #A2C: 1024 RA: 512
+  num_layers: 6
+  c_final: 2
+
+train:
+  name: test
+  lambda_train: 5
+  num_epochs: 500
+  save_interval: 100
+  print_interval: 1000
+  reduce_mean: False
+  lr: 0.0005
+  lr_schedule: True
+  ema: 0.999
+  weight_decay: 0
+  grad_norm: 1.0
+  lr_decay: 0.999
+  eps: 1.0e-5
+
+sample:
+  batch_size: 2500
+  use_ema: True
+  noise_removal: True
+  probability_flow: False
+  eps: 1.0e-3
+  seed: 42
+  template: LRRK2
+
+sampler:
+  predictor: Reverse
+  corrector: Adamomentum  #None
+  snr: 0.2  #0
+  scale_eps: 0.8 #0
+  n_steps: 1
