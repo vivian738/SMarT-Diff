@@ -31,12 +31,17 @@ conda create -n smartdiff --file requirements.txt
 conda activate smartdiff
 ```
 
+## Best practices
+
+The checkpoints provided are for reference. For optimal results, retrain the model on your specific dataset and objectives.
+The visitor can download the pre-trained model from: [HuggingFace Link](https://huggingface.co/spaces/vicky963/SMarT-Diff)
+
 ## Dataset Preparation
 ### 1. Provided datasets
 
 The repository includes: ZINC250k, ChEMBL
 
-Located in: ```data/```
+The preprocessed datasets can be downloaded from [HuggingFace Link](https://huggingface.co/spaces/vicky963/SMarT-Diff) to: ```data/```
 
 ### 2. Use your own dataset
 ```bash
