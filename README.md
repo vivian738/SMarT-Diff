@@ -1,9 +1,5 @@
 # SMarT-Diff: A Multi-Objective Molecular Generation Framework for Lead Optimization
 
-> ⚠️ **Important Notice**  
-> This repository accompanies a research project that **has not yet been formally published**.  
-> The framework, algorithms, and model configurations are subject to change.  
-> Please use with caution and cite appropriately once the work is officially released.
 
 ---
 
@@ -111,3 +107,15 @@ This project is released under the MIT License.
 ## Disclaimer
 
 This is research code for an unpublished project; some components may still change.
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{yang2026diffusion,
+  title   = {Diffusion-Based Generative Model with Scaffold-Hopping Strategy Yields Highly Potent Bioactive Molecules},
+  author  = {Yuwei Yang, Xiaoqing Gong, Shukai Gu, Jing Li, Bo Liu, Yanan Tian, Qianqian Zhang, Xiaojun Yao, Huanxiang Liu},
+  journal = {Advanced Science},
+  year    = {2026}
+}
