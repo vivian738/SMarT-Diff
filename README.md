@@ -14,7 +14,7 @@ Key capabilities include:
 - Structure-aware score modeling  
 - Pharmacophore-guided sampling  
 - Reinforcement learning via A2C for activity enhancement  
-- Support for both 2D and 3D representation workflows
+- Support for scaffold hopping workflows
 
 ---
 
